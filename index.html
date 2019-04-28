@@ -9,17 +9,33 @@
 				margin-left: auto;
 				margin-right: auto;
 				display: block;
-				width: 800px;
 			}
-
+			div{
+				margin-right: auto;
+				margin-left: auto;
+				padding-left: 0;
+				padding-right: 0;
+				width: 600
+			}
 		</style>	
 	</head>
 
 	<body>
+		<center>
+			<h3>BPS Tracker</h3>
+		</center>
 		<div id="data" >
-			<canvas id="myChart" width="400" height="400"></canvas>
+			<canvas id="myChart" width="600" height="600"></canvas>
 		</div> 
-
+		<br>
+		<div align="center">
+			Submit Data:
+			BP:
+			<input id="bp" type="number"></input>
+			Sugar:
+			<input id="sugar" type="number"></input>
+			<button onclick="sendData()">Send Data </button>
+		</div>
 		<script src="js/index.js"></script>
 
 	</body>
